@@ -5,11 +5,11 @@ FROM python:3.9-slim-buster
 ENV PYTHONUNBUFFERED=1
 
 # Cria o diretório para a aplicação dentro do container
-WORKDIR /MINHA_API
+WORKDIR /Minha_API
 
 # Copia os arquivos necessários para dentro do container
-COPY requirements.txt /MINHA_API/
-COPY . /MINHA_API/
+COPY requirements.txt /Minha_API/
+COPY . /Minha_API/
 
 # Instala as dependências da aplicação
 RUN pip install -r requirements.txt
